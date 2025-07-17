@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Roboto;
+}
+:root {
+  /* Primary Colors */
+  --primary-color: #009245;
+  --primary-white: #ffffff;
+  --primary-dark: #1e1e1e;
+}
+.eco-container {
+  max-width: 1440px;
+  padding: 0 44px;
+  margin: auto;
+  @media only screen and (max-width: 1024px) {
+    padding: 0 32px;
+  }
+  @media only screen and (max-width: 776px) {
+    padding: 0 16px;
+  }
+}
+.memory {
+  background-color: var(--primary-dark);
+}
+.about{
+  padding: 0;
+}
+.memory-content {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.memory-text {
+  /* flex: 1; */
+  min-width: 300px;
+  padding-left: 40px;
+}
+
+.memory-text h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--primary-white);
+  margin-bottom: 24px;
+}
+
+.memory-text p {
+  font-size: 16px;
+  color: #cccccc;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.memory-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--primary-white);
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.memory-link i {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.memory-link:hover {
+  color: var(--primary-color);
+}
+
+.memory-link:hover i {
+  color: var(--primary-white);
+}
+
+.memory-image {
+  flex: 1 ;
+  min-width: 300px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.memory-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.memory-image img:hover {
+  filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+  .memory-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .memory-image {
+    margin-bottom: 40px;
+  }
+
+  .memory-text {
+    padding: 0 20px;
+  }
+
+  .memory-text h1 {
+    font-size: 36px;
+  }
+
+  .memory-image img {
+    max-width: 100%;
+  }
+}

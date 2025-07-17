@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Roboto;
+}
+:root {
+  /* Primary Colors */
+  --primary-color: #009245;
+  --primary-white: #ffffff;
+  --primary-dark: #1e1e1e;
+}
+.auth-modal {
+  padding-top: 60px;
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  top: 10%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-modal h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.auth-form label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.auth-form input {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.auth-form button {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 999px;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: not-allowed;
+}
+
+.social-login {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 0.75rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid #aaa;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.social-btn i {
+  width: 20px;
+  height: 20px;
+}
+
+/* Optional: hover effects */
+.social-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.login-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-panel {
+  flex: 1;
+  background: url("./assets/img/homecamera.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  padding: 2rem;
+}
+.overlay-text {
+  max-width: 400px;
+}
+.overlay-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.overlay-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.right-panel {
+  flex: 1;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 0.9rem;
+}
+.top-right a {
+  text-decoration: none;
+}
+
+.form-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.social-btn:hover {
+  background: #f0f0f0;
+}
+.social-btn img {
+  width: 20px;
+}
+
+.divider {
+  text-align: center;
+  margin: 1.5rem 0;
+  position: relative;
+}
+.divider span {
+  background: #fff;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+.divider::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #ccc;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  z-index: 0;
+}
+
+.login-form label {
+  font-size: 0.9rem;
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+}
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.password-wrapper {
+  position: relative;
+}
+.password-wrapper input {
+  padding-right: 40px;
+}
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 1.5rem;
+}
+.forgot-password a {
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 25px;
+  cursor: not-allowed;
+  transition: 0.3s ease;
+}
+.submit-btn.active {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.bottom-signup {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.bottom-signup a {
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+  .left-panel,
+  .right-panel {
+    flex: unset;
+    width: 100%;
+    height: auto;
+  }
+  .overlay-text {
+    text-align: center;
+  }
+}

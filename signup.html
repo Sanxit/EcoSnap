@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="left-panel">
+        <div class="overlay-text">
+          <span class="dot"></span>
+          <h1>Capture your moment with us.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            lobortis maximus nunc, ac rhoncus odio congue quis. Sed ac semper
+            orci, eu porttitor lacus.
+          </p>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div class="top-right">
+          <p>Don't have an account? <a href="login.html">Sign up</a></p>
+        </div>
+        <div class="form-wrapper">
+          <h2>Sign in</h2>
+
+          <button class="social-btn google">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+              alt=""
+            />
+            Continue with Google
+          </button>
+          <button class="social-btn twitter">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
+              alt=""
+            />
+            Continue with Twitter
+          </button>
+
+          <div class="divider"><span>OR</span></div>
+
+          <form class="login-form">
+            <label for="email">User name or email address</label>
+            <input type="email" id="email" required />
+
+            <label for="password">Your password</label>
+            <div class="password-wrapper">
+              <input type="password" id="password" required />
+            </div>
+
+            <div class="forgot-password">
+              <a href="#">Forget your password</a>
+            </div>
+
+            <button type="submit" class="submit-btn">Sign in</button>
+          </form>
+
+          <p class="bottom-signup">
+            Don't have an account? <a href="login.html">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
