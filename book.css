@@ -1,34 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 html,
 body {
   height: 100%;
   width: 100%;
   font-family: Poppins;
 }
+
 :root {
-  /* Primary Colors */
   --primary-color: #009245;
   --primary-white: #ffffff;
   --primary-dark: #1e1e1e;
 }
-.eco-container {
-  max-width: 1440px;
-  padding: 0 44px;
-  margin: auto;
-  @media only screen and (max-width: 1024px) {
-    padding: 0 32px;
-  }
-  @media only screen and (max-width: 776px) {
-    padding: 0 16px;
-  }
-}
+
 .booking {
   padding: 3rem 0;
   text-align: center;
@@ -74,16 +58,18 @@ body {
 }
 
 .form-wrapper {
-  max-width: 400px; /* adjust as needed */
+  max-width: 400px;
   margin: 0 auto;
   padding: 24px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
 }
-.form-pad{
+
+.form-pad {
   padding: 0 0 3rem;
 }
+
 .form-tabs {
   max-width: 400px;
   margin: auto;
@@ -121,13 +107,11 @@ body {
   gap: 16px;
 }
 
-
 input,
 textarea {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid #ccc;
-  border-radius: 6px;
   font-size: 1rem;
 }
 
@@ -147,6 +131,7 @@ textarea {
   color: red;
   margin-left: 4px;
 }
+
 .checkbox-label {
   display: inline-flex;
   align-items: center;
@@ -154,7 +139,6 @@ textarea {
   cursor: pointer;
   font-weight: 500;
 }
-
 
 .form-button {
   padding: 12px 24px;
@@ -165,13 +149,16 @@ textarea {
   cursor: pointer;
   transition: 0.4s ease;
 }
-.form-button:hover{
+
+.form-button:hover {
   background-color: var(--primary-color);
 }
+
 .button-group {
   display: flex;
   justify-content: flex-end;
 }
+
 .form-button:not(:last-child) {
   margin-right: 12px;
 }
@@ -188,15 +175,19 @@ textarea {
   flex-wrap: wrap;
   transition: 0.4s ease;
 }
+
 .service-card:hover {
   border: 3px solid var(--primary-color);
 }
+
 .service-info {
   flex: 1 1 55%;
 }
-.service-pad{
+
+.service-pad {
   padding: 0 0 3rem;
 }
+
 .service-title {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;

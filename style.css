@@ -153,6 +153,16 @@ body {
   color: var(--primary-white);
 }
 
+.cross {
+  font-size: 2.2rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;

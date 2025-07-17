@@ -21,24 +21,34 @@
         <nav class="navbar">
           <div class="navpart-1">
             <!-- <a href="index.html"><img class="logo" src="./assets/img/logo.png" alt=""></a> -->
-            <a href="index.html" target="_blank"><h2><span>Eco</span> Snap</h2></a>
+            <a href="index.html" target="_blank"
+              ><h2><span>Eco</span> Snap</h2></a
+            >
           </div>
           <div class="navpart-2">
             <ul class="navitems">
               <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="about.html" class="abt" target="_blank">About</a></li>
-              <li><a href="service.html" class="ser" target="_blank">Service</a></li>
-              <li><a href="portfolio.html" class="por" target="_blank">Portfolio</a></li>
+              <li>
+                <a href="about.html" class="abt" target="_blank">About</a>
+              </li>
+              <li>
+                <a href="service.html" class="ser" target="_blank">Service</a>
+              </li>
+              <li>
+                <a href="portfolio.html" class="por" target="_blank"
+                  >Portfolio</a
+                >
+              </li>
             </ul>
             <a class="hire-btn" href="book.html" target="_blank">Booking</a>
             <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
                 >&times;</a
               >
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Service</a>
-              <a href="#">Portfolio</a>
+              <a href="index.html" onclick="closeNav()">Home</a>
+              <a href="about.html" onclick="closeNav()">About</a>
+              <a href="service.html" onclick="closeNav()">Service</a>
+              <a href="portfolio.html" onclick="closeNav()">Portfolio</a>
             </div>
             <div id="main">
               <span class="cross" onclick="openNav()">&#9776;</span>
@@ -304,9 +314,14 @@
         <!-- Hire Us -->
         <div class="footer-col">
           <h4>HIRE US TODAY !</h4>
-          <form class="hire-form">
-            <input type="email" placeholder="Enter email address..." required />
-            <button type="submit">HIRE</button>
+          <form class="hire-form" action="book.html" method="get">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter email address..."
+              required
+            />
+            <button type="submit">Book</button>
           </form>
           <ul class="social-icons">
             <li>
